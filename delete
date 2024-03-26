@@ -1,0 +1,130 @@
+
+
+
+# # coucou line wall_starting_coordonate.append([row[randnum][0],row[randnum][1],randposition])
+            
+#             print(wall_starting_coordonate)
+#     for i in wall_starting_coordonate:
+#         pygame.draw.rect(screen, BLACK, i)
+#     for i in range(randwall):
+#         randnum= random.randint(0,15)
+#         randposition=random.randint(0,1)
+#         if randposition == 0:
+#             wall_starting_coordonate.append(image_wall,[row[randnum][0],row[randnum][1],10,75])
+#         if randposition == 1:
+#             wall_starting_coordonate.append(image_wall,[row[randnum][0],row[randnum][1],75,10])
+
+
+
+
+# # coucou line     a=screen.blit(animation_list[action][frame], (x, y))
+
+
+#     keys=pygame.key.get_pressed()
+#     if lastkey[1] != 1:
+#         pygame.display.update()
+#         # print(a)
+#     if (keys[pygame.K_DOWN] and keys[pygame.K_LEFT] or keys[pygame.K_DOWN] and keys[pygame.K_RIGHT]) or (keys[pygame.K_UP] and keys[pygame.K_LEFT] or keys[pygame.K_UP] and keys[pygame.K_RIGHT]) or (keys[pygame.K_UP] and keys[pygame.K_DOWN] or keys[pygame.K_LEFT] and keys[pygame.K_RIGHT]):
+#         pass  
+
+#     elif keys[pygame.K_RIGHT]:
+#         if lastkey[1] != pygame.K_RIGHT:
+#             frame=0
+#         elif lastkey[0] == pygame.K_RIGHT and current_time - last_update >= animation_cooldown:
+#             frame+=1
+#             last_update=current_time
+#             if frame>=len(animation_list[action]):
+#                 frame=0
+
+#         # print(frame)
+#         action = 3
+#         if move_ticker == 0:   
+#             move_ticker = 5      
+#             x+=0.5
+#             if x > 990:
+#                 x = 990
+#         lastkey[0], lastkey[1]=pygame.K_RIGHT,pygame.K_RIGHT
+
+#     elif keys[pygame.K_LEFT]:
+#         if lastkey[1] !=pygame.K_LEFT:
+#             frame=0
+#         elif lastkey[0] == pygame.K_LEFT and current_time - last_update >= animation_cooldown:
+#             frame+=1
+#             last_update=current_time
+#             if frame>=len(animation_list[action]):
+#                 frame=0
+
+#         action = 1
+#         if move_ticker == 0:
+#             move_ticker = 5
+#             x -= 0.5
+#             if x < 0:
+#                 x = 0
+#         lastkey[0], lastkey[1]=pygame.K_LEFT,pygame.K_LEFT
+#         # print(frame)
+#     elif keys[pygame.K_UP]:
+#         if lastkey[1] !=pygame.K_UP:
+#             frame=0
+#         elif lastkey[0] == pygame.K_UP and current_time - last_update >= animation_cooldown:
+#             frame+=1
+#             last_update=current_time
+#             if frame>=len(animation_list[action]):
+#                 frame=0
+
+#         action = 0
+#         if move_ticker == 0:
+#             move_ticker = 5
+#             y -= 0.5
+#             if y < 0:
+#                 y = 0
+#             # print(y)
+#         lastkey[0], lastkey[1]=pygame.K_UP,pygame.K_UP
+#         # print(frame)
+#     elif keys[pygame.K_DOWN]:
+#         if lastkey[1] !=pygame.K_DOWN:
+#             frame=0
+#         elif lastkey[0] == pygame.K_DOWN and current_time - last_update >= animation_cooldown:
+#             frame+=1
+#             last_update=current_time
+#             if frame>=len(animation_list[action]):
+#                 frame=0
+#         action = 2
+#         if move_ticker == 0:   
+#             move_ticker = 5     
+#             y+=0.5
+#             if y > 900:
+#                 y = 900
+#             # print(y)
+#         lastkey[0], lastkey[1]=pygame.K_DOWN,pygame.K_DOWN
+
+# coucou.py row=[]
+# pygame.draw.rect(screen,BACKGROUND,[0,0,75,75])
+    # for i in range(75,1426,75):
+    #     pygame.draw.rect(screen, BACKGROUND,[i,0,75,75])
+    #     pygame.draw.rect(screen, BACKGROUND,[0,i,75,75])
+    #     row.append([i,0,75,75])
+    #     row.append([0,i,75,75])
+    #     for a in range(75,800,75):
+    #         rect = pygame.draw.rect(screen,BACKGROUND,[i,a,75,75])
+    #         row.append([i,a,75,75])
+    # for i in range(75,1426,75):
+    #     pygame.draw.lines(screen, (0,0,0), 1, ([[00,i],[1425,i]]))
+    #     pygame.draw.lines(screen, (0,0,0), 1, ([[i,0],[i,800]]))
+    # pygame.draw.rect(screen, (0,0,255),[0,0,75,75])
+    # pygame.draw.rect(screen, (255,0,0),[0,750,75,75])
+    # pygame.draw.rect(screen, (255,255,0),[1350,0,75,75])
+    # pygame.draw.rect(screen, (0,255,0),[1350,750,75,75])
+    # if onetime == 1:
+    #     for i in range(len(row)+int(len(row)/3)):
+    #         randnum= random.randint(0,len(row)-1)  
+    #         randposition=random.randint(0,1) 
+    #         wall_starting_coordonate.append([row[randnum][0],row[randnum][1],randposition])
+    #     onetime=2
+    #     print(len(row))
+    # for i in wall_starting_coordonate:
+    #     tuple_wall = tuple([i[0],i[1]])
+    #     if i[2] == 0:
+    #         b = get_wall(image_wall, i, 10, 75)
+    #     if i[2] == 1:
+    #         b = get_wall(image_wall, i, 75, 10)
+    #     screen.blit(b,tuple_wall)

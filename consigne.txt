@@ -1,0 +1,4 @@
+tour par tour 
+plateau 2d aleatoire
+piece d'un bout a l'autre du plateau
+objet sur le plateau placé aléatoirement apres le placement des pions 
